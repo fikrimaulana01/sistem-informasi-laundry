@@ -24,6 +24,7 @@
                     <thead>
                         <tr>
                             <th>No</th>
+                            <th>Id</th>
                             <th>Nama</th>
                             <th>No Hp</th>
                             <th>Tanggal Lahir</th>
@@ -36,7 +37,7 @@
                     <tfoot>
                         <tr>
                             <th>No</th>
-                            <th>Nama</th>
+                            <th>Id</th>
                             <th>No Hp</th>
                             <th>Tanggal Lahir</th>
                             <th>Alamat</th>
@@ -49,6 +50,7 @@
                         @foreach ($pelanggans as $pelanggan)
                             <tr>
                                 <td>{{ $loop->index + 1 }}</td>
+                                <td>{{ $pelanggan->id }}</td>
                                 <td>{{ $pelanggan->nama }}</td>
                                 <td>{{ $pelanggan->nomor_hp }}</td>
                                 <td>{{ $pelanggan->tanggal_lahir }}</td>

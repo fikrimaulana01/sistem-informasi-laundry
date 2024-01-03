@@ -21,7 +21,7 @@ class PesananController extends Controller
     public function dataLaundryProses()
     {
         $pesanans = Pesanan::where('status' , 'Sedang DiProses')->get();
-        return view('pelanggan.data-laundry', compact('pesanans'));
+        return view('pegawai.data-laundry', compact('pesanans'));
     }
     public function pelangganDataLaundry()
     {
@@ -41,7 +41,7 @@ class PesananController extends Controller
     public function tambahPesanan()
     {
         $layanans = Layanan::all();
-        return view('pelanggan.tambah-pesanan', compact('layanans'));
+        return view('pegawai.tambah-pesanan', compact('layanans'));
     }
 
     public function storePesanan(Request $request)
